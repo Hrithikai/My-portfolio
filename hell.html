@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">Your Name</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <a class="links" href="#home">Home</a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#about">About</a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#services">Services</a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main hero banner -->
+    <section id="home" class="hero">
+        <div class="intro">
+            <div class="headings">
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading">Your Name</h1>
+                <h4 class="sub-heading">A Software Engineer with 3 years of Experience.</h4>
+            </div>
+            <div class="intro-buttons">
+                <button class="btn common-btn">Hire Me</button>
+                <button class="btn ghost-btn">Get Resume</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio-heading">
+            <h1 class="my-heading text-center">Featured Portfolio</h1>
+        </div>
+        <div class="portfolio-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="image1.jpg" alt="Project Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">Project 1</h3>
+                        <p class="small-para blue-text">Description</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="image2.jpg" alt="Project Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">Project 2</h3>
+                        <p class="small-para blue-text">Description</p>
+                    </div>
+                </div>
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="image3.jpg" alt="Project Image">
+                        </div>
+                        <h3 class="greet-heading blue-text">Project 3</h3>
+                        <p class="small-para blue-text">Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- Google Maps -->
+                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=new+york&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                            </iframe>
+                        </div>
+                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-

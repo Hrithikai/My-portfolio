@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+/* Navbar */
+.header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo-heading {
+    margin: 0;
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list-items {
+    margin-left: 20px;
+}
+
+.links {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding-top: 60px; /* Adjust for navbar */
+}
+
+.intro {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.headings h3, .headings h1, .headings h4 {
+    margin: 10px 0;
+}
+
+.intro-buttons .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.common-btn {
+    background: #007BFF;
+    color: #fff;
+}
+
+.ghost-btn {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.common-btn:hover, .ghost-btn:hover {
+    opacity: 0.8;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.portfolio-heading {
+    margin-bottom: 40px;
+}
+
+.my-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.my-col {
+    flex: 1 1 calc(33% - 20px);
+    margin: 10px;
+    animation: slideInUp 1s ease-in-out;
+}
+
+.my-card {
+    background: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.my-card:hover {
+    transform: translateY(-10px);
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.blue-text {
+    color: #007BFF;
+}
+
+/* Contact Section */
+.contactContent {
+    padding: 60px 20px;
+    background: #f4f4f9;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.mt-4 {
+    margin-top: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .my-col {
+        flex: 1 1 100%;
+    }
+}
